@@ -87,15 +87,16 @@ namespace UserPresenceWpf
 
             outputFileDirectory =
             Path.Combine(exeRuntimeDirectory, "Output");
-                    if (!System.IO.Directory.Exists(outputFileDirectory))
-                    {
-                        // Output directory does not exist, so create it.
-                        System.IO.Directory.CreateDirectory(outputFileDirectory);
-                    }
+            if (!System.IO.Directory.Exists(outputFileDirectory))
+            {
+                // Output directory does not exist, so create it.
+                System.IO.Directory.CreateDirectory(outputFileDirectory);
+            }
             Console.WriteLine(exeRuntimeDirectory);
             Console.WriteLine(outputFileDirectory);
             stream.Next += (s, e) => updateGazeData((int)e.X, (int)e.Y, (int)e.Timestamp);
             File.WriteAllText(outputFileDirectory + @"\gazeDataOutput.csv", "X Gaze Data, Y Gaze Data, Time \r\n");
+            writeDataToFile(_eyeXHost.ScreenBounds.ToString());
         }
 
         private void updateGazeData(int x, int y, int time)

@@ -43,3 +43,6 @@ C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\EyeTrackerWidget\source\
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\EyeTrackerWidget\source\WpfSamples\UserPresenceWpf\obj\x86\Release\UserPresenceWpf.g.resources
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\EyeTrackerWidget\source\WpfSamples\UserPresenceWpf\obj\x86\Release\UserPresenceWpf.Properties.Resources.resources
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\EyeTrackerWidget\source\WpfSamples\UserPresenceWpf\obj\x86\Release\UserPresenceWpf.csproj.GenerateResource.Cache
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\WpfSamples\UserPresenceWpf\bin\x86\Release\UserPresenceWpf.exe.config
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\WpfSamples\UserPresenceWpf\obj\x86\Release\UserPresenceWpf.exe
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\WpfSamples\UserPresenceWpf\obj\x86\Release\UserPresenceWpf.pdb
