@@ -20,7 +20,7 @@ counter = 0
 imgno = 0
 
 #Generate heatmaps over time intervals of a second
-with open('./bin/x86/Release/Output/gazeDataOutput.csv', 'r') as csvfile:
+with open('./source/WpfSamples/UserPresenceWpf/bin/x86/Release/Output/gazeDataOutput.csv', 'r') as csvfile:
     freader = csv.reader(csvfile)
     r1 = next(freader)
     r2 = next(freader)
