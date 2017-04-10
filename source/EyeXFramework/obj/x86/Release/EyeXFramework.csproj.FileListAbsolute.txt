@@ -4,3 +4,10 @@ C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\Tobii Eye Tracker Sample
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\Tobii Eye Tracker Samples\source\EyeXFramework\bin\x86\Release\Tobii.EyeX.Client.Net20.xml
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\Tobii Eye Tracker Samples\source\EyeXFramework\obj\x86\Release\EyeXFramework.dll
 C:\Users\yaoguais\Documents\Visual Studio 2015\Projects\Tobii Eye Tracker Samples\source\EyeXFramework\obj\x86\Release\EyeXFramework.pdb
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\bin\x86\Release\EyeXFramework.dll
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\bin\x86\Release\EyeXFramework.pdb
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\bin\x86\Release\Tobii.EyeX.Client.Net20.dll
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\bin\x86\Release\Tobii.EyeX.Client.Net20.xml
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\obj\x86\Release\EyeXFramework.csprojResolveAssemblyReference.cache
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\obj\x86\Release\EyeXFramework.dll
+C:\Users\ndbui\Documents\Eye-Tracker-Comparison\source\EyeXFramework\obj\x86\Release\EyeXFramework.pdb
