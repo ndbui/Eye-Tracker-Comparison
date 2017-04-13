@@ -6,7 +6,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:utilities="clr-namespace:UserPresenceWpf.Utilities"
-        Title="User Presence WPF Sample" Width="800" Height="600" WindowStartupLocation="CenterScreen">
+        Title="User Presence WPF Sample" Width="800" Height="600" WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
 
     <Window.Resources>
         <utilities:YesNoConverter x:Key="YesNoConverter" />
@@ -58,7 +59,6 @@
         </Grid>
 
         <Image Source="{Binding ImageSource}" Grid.Row="1" Margin="0,5,0,21" Grid.RowSpan="2" />
-        <Label Grid.Row="2" Content="Try playing peek-a-boo with this guy and see what happens..."/>
 
     </Grid>
 </Window>
