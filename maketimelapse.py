@@ -20,7 +20,7 @@ counter = 0
 imgno = 0
 
 #Generate heatmaps over time intervals of a second
-with open('./source/WpfSamples/UserPresenceWpf/bin/x86/Release/Output/gazeDataOutput.csv', 'r') as csvfile:
+with open('./Output/gazeDataOutput.csv', 'r') as csvfile:
     freader = csv.reader(csvfile)
     r1 = next(freader)
     r2 = next(freader)
@@ -29,11 +29,11 @@ with open('./source/WpfSamples/UserPresenceWpf/bin/x86/Release/Output/gazeDataOu
     mysize = map(int, mysize)
     mysize = tuple(mysize)
     for row in freader:
-        mod = (mod + 1)%2
+        mod = (mod + 1)%2 #take every other point
         if mod == 1:
             counter += 1
             pts.append((int(row[0]), mysize[1] - int(row[1])))
-            if counter%50==0:
+            if counter%25==0: #50 for interval of a second, 25 for half second
                 imgno += 1
                 img = hm.heatmap(pts, size = mysize, area = ((0,0), mysize), dotsize=75) #scale dotsize up?
                 img.save(folderpath+ "/imgs/hm" + str(imgno) + ".png")
@@ -47,5 +47,5 @@ print "Making timelapse..."
 image_list = []
 for x in xrange(imgno):
     image_list.append(folderpath + "/imgs/hm" + str(x+1)+".png")
-my_clip = ImageSequenceClip(image_list, fps=1)
+my_clip = ImageSequenceClip(image_list, fps=2)
 my_clip.write_videofile(folderpath+"/timelapse.mp4", codec = "mpeg4", audio = False)
