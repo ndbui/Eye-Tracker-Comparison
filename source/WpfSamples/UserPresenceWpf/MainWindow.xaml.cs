@@ -77,9 +77,9 @@ namespace UserPresenceWpf
             _eyeXHost.Start();
             InitializeComponent();
 
-            gazeDataTextX.DataContext = publicGazeData;
-            gazeDataTextY.DataContext = publicGazeData;
-            gazeDataTextTime.DataContext = publicGazeData;
+            //gazeDataTextX.DataContext = publicGazeData;
+            //gazeDataTextY.DataContext = publicGazeData;
+            //gazeDataTextTime.DataContext = publicGazeData;
 
             var stream = _eyeXHost.CreateGazePointDataStream(Tobii.EyeX.Framework.GazePointDataMode.LightlyFiltered);
 
@@ -97,6 +97,11 @@ namespace UserPresenceWpf
             stream.Next += (s, e) => updateGazeData((int)e.X, (int)e.Y, (int)e.Timestamp);
             File.WriteAllText(outputFileDirectory + @"\gazeDataOutput.csv", "X Gaze Data, Y Gaze Data, Time \r\n");
             writeDataToFile(_eyeXHost.ScreenBounds.ToString());
+        }
+
+        public void MediaFailedHandler(object sender, ExceptionRoutedEventArgs e)
+        {
+            MessageBox.Show(e.ErrorException.ToString());
         }
 
         private void updateGazeData(int x, int y, int time)

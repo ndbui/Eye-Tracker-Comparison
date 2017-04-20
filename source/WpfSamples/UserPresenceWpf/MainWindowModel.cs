@@ -21,7 +21,7 @@ namespace UserPresenceWpf
     public class MainWindowModel : Window, INotifyPropertyChanged, IDisposable
     {
         public WpfEyeXHost _eyeXHost;
-        private string _imageSource;
+        private string _imageSource;// "bin/x86/Release/Results/20170412-131455/timelapse.mp4";
         private string _recordingText;
         private bool _isUserPresent;
         private bool _isTrackingGaze;
@@ -29,8 +29,8 @@ namespace UserPresenceWpf
 
         public MainWindowModel()
         {
-            IsUserPresent = false;
-            IsTrackingGaze = false;
+            IsUserPresent = true;
+            IsTrackingGaze = true;
             IsTrackingGazeSupported = true;
 
             // Create and start the WpfEyeXHost. Starting the host means
@@ -60,7 +60,11 @@ namespace UserPresenceWpf
             }
         }
 
+
+
         public event PropertyChangedEventHandler PropertyChanged;
+
+       
 
         /// <summary>
         /// A path to an image corresponding to the current UserPresence state.
