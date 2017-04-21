@@ -29,8 +29,8 @@ namespace UserPresenceWpf
 
         public MainWindowModel()
         {
-            IsUserPresent = true;
-            IsTrackingGaze = true;
+            IsUserPresent = false;
+            IsTrackingGaze = false;
             IsTrackingGazeSupported = true;
 
             // Create and start the WpfEyeXHost. Starting the host means

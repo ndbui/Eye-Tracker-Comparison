@@ -34,9 +34,9 @@ namespace UserPresenceWpf
         protected override void OnExit(ExitEventArgs e)
         {
             base.OnExit(e);
-            //string strCmdText;
-            //strCmdText = "/C echo Creating Heatmaps... & python ../../../../../../maketimelapse.py";
-            //System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            string strCmdText;
+            strCmdText = "/C echo Creating Heatmaps... & python ../../../../../../maketimelapse.py";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
             _mainWindowModel.Dispose();
             
         }
