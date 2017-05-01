@@ -104,6 +104,11 @@ namespace UserPresenceWpf
             MessageBox.Show(e.ErrorException.ToString());
         }
 
+        public void MediaEndedHandler(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
         private void updateGazeData(int x, int y, int time)
         {
             publicGazeData.gazeX = x;
