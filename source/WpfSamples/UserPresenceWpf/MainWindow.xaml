@@ -12,7 +12,7 @@
     <Window.Resources>
         <utilities:YesNoConverter x:Key="YesNoConverter" />
         <utilities:VisibilityConverter x:Key="VisibilityConverter" />
-    </Window.Resources>
+    </Window.Resources> 
 
     <!-- This WPF sample shows how an image source can be changed depending on whether
          the user is present or not. The EyeX Engine will consider the user to be present 
@@ -57,8 +57,9 @@
                 <Run Text="{Binding time}" />
             </TextBlock>
         </Grid>
-
-        <Image Source="{Binding ImageSource}" Grid.Row="1" Margin="0,5,0,21" Grid.RowSpan="2" />
+        <!-- "bin/x86/Release/Results/20170412-131455/timelapse.mp4" -->
+        <!--<Image Source="{Binding ImageSource}" Grid.Row="1" Margin="0,5,0,21" Grid.RowSpan="2" /> -->
+        <MediaElement x:Name="videoWindow" Source="http://www.cs.unc.edu/~tluo/experiment.mp4" Grid.Row="1" Grid.RowSpan="2" Margin="0,5,0,21" MediaFailed="MediaFailedHandler" MediaEnded="MediaEndedHandler"/>
 
     </Grid>
 </Window>
