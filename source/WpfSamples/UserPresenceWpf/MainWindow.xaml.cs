@@ -77,10 +77,6 @@ namespace UserPresenceWpf
             _eyeXHost.Start();
             InitializeComponent();
 
-            //gazeDataTextX.DataContext = publicGazeData;
-            //gazeDataTextY.DataContext = publicGazeData;
-            //gazeDataTextTime.DataContext = publicGazeData;
-
             var stream = _eyeXHost.CreateGazePointDataStream(Tobii.EyeX.Framework.GazePointDataMode.LightlyFiltered);
 
             string exeRuntimeDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);

@@ -1,8 +1,7 @@
-# EyeTrackerWidget
-Eye Tracking Widget using Tobii 4c Eye Tracker 
+# Tobii 4C Heatmap Generator
+Branched from the following [Eye Tracking Widget](https://github.com/commanderking/EyeTrackerWidget) created by commanderking
 
-The Eye Tracker Widget displays realtime eye tracking data from the Tobii 4c Eye Tracker, specifically the x-coordinate and 
-y-coordinate of the user's gaze on the screen. It also outputs this data into a csv file for further data analysis. 
+Uses the Tobii 4C Eye Tracker to collect the X and Y-coordinates of the user's gaze while watching a prepared video clip and stores it into a csv. After the video clip ends a folder will be created in the Results folder containing all of the heatmap images as well as the heatmaps in mp4 format under timelapse.mp4.
 
 #Prerequisites
 * Tobii Eye Tracker Device. Tested with Tobii 4c.
@@ -11,7 +10,8 @@ y-coordinate of the user's gaze on the screen. It also outputs this data into a 
 * Visual Studio 2015. Tested with Community edition.
 
 #Getting Started
-The primary solution, titled UserPresenceWpf is located at /source/WpfSamples/UserPresenceWpf. Open this file in Visual Studio to begin editing. 
+The primary solution, titled UserPresenceWpf is located at /source/WpfSamples/UserPresenceWpf. Open this file in Visual Studio to begin editing.
 
 A release build that works out of the box can be found at /source/WpfSamples/UserPresenceWpf/bin/x86/Release. Open UserPresenceWpf (Type Application) to run the program.
-All collected data will be found in the Output folder under gazeDataOutput.csv. As of now, each new session will replace the data in the old gazeDataOut.csv
+
+You can uncomment out the code at the bottom of maketimelapse.py in order to automatically create an overlay of the heatmaps over the experiment video once the heatmaps have been created but the process takes a bit of time to complete.
